@@ -1,0 +1,78 @@
+# ==========================================
+# 1. ARCHIVOS DELICADOS Y CONFIGURACIÓN LOCAL (Spring Boot)
+# ==========================================
+**/src/main/resources/application-local.properties
+**/src/main/resources/application-local.yml
+**/src/main/resources/application-dev.properties
+**/src/main/resources/application-dev.yml
+**/src/main/resources/application.properties
+**/src/main/resources/application.yml
+*.env
+*.env.local
+
+# Claves privadas, certificados SSL/TLS y KeyStores
+*.pem
+*.p12
+*.jks
+*.crt
+*.key
+
+# ==========================================
+# 2. COMPILACIÓN Y CONSTRUCCIÓN (Maven y Gradle)
+# ==========================================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+build/
+.gradle/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+*.class
+*.jar
+*.war
+*.ear
+*.rar
+
+# ==========================================
+# 3. ENTORNOS DE DESARROLLO (IDEs)
+# ==========================================
+
+### Spring Tool Suite (STS) & Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.metadata/
+bin/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Visual Studio Code ###
+.vscode/
+*.code-workspace
+
+# ==========================================
+# 4. LOGS Y ARCHIVOS DEL SISTEMA
+# ==========================================
+HELP.md
+*.log
+.DS_Store
+Thumbs.db
